@@ -3707,3 +3707,33 @@ INFO   [21:10:32.964] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableSe
 INFO   [21:10:33.012] [main] o.e.j.s.AbstractConnector -  Started application@4745e9c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
 INFO   [21:10:33.015] [main] o.e.j.s.AbstractConnector -  Started admin@2f2bff16{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
 INFO   [21:10:33.015] [main] o.e.j.s.Server -  Started @1999ms 
+INFO   [21:38:47.711] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [21:38:47.714] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [21:38:47.724] [main] i.d.s.ServerFactory -  Starting java-api 
+INFO   [21:38:47.856] [main] o.e.j.s.SetUIDListener -  Opened application@296e281a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [21:38:47.856] [main] o.e.j.s.SetUIDListener -  Opened admin@59cda16e{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
+INFO   [21:38:47.858] [main] o.e.j.s.Server -  jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_131-b11 
+INFO   [21:38:48.384] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /api/alumnos/ (universidad.alumnos.api.controller.AlumnosController)
+    GET     /api/alumnos/{tipo} (universidad.alumnos.api.controller.AlumnosController)
+ 
+INFO   [21:38:48.386] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@67f63d26{/,null,AVAILABLE} 
+INFO   [21:38:48.391] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [21:38:48.391] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [21:38:48.396] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@64bebd55{/,null,AVAILABLE} 
+INFO   [21:38:48.495] [main] o.e.j.s.AbstractConnector -  Started application@296e281a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [21:38:48.499] [main] o.e.j.s.AbstractConnector -  Started admin@59cda16e{HTTP/1.1,[http/1.1]}{0.0.0.0:8081} 
+INFO   [21:38:48.499] [main] o.e.j.s.Server -  Started @2182ms 
