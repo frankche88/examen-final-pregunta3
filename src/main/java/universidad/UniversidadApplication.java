@@ -28,7 +28,7 @@ public class UniversidadApplication extends Application<UniversidadConfiguration
 	@Override
 	public void initialize(Bootstrap<UniversidadConfiguration> bootstrap) {
 
-		
+		bootstrap.addBundle(new CorsBundle());
 
 	}
 
