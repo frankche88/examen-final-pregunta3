@@ -1,0 +1,9 @@
+---
+defaults: &defaults
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  memory: 256M
+applications:
+- name: examen-final-pregunta3
+  path: build/libs/examen-final-pregunta3.jar
+  <<: *defaults
+  command: echo "Starting banking-dropwizard." && $PWD/.java-buildpack/open_jdk_jre/bin/java -cp $PWD/*:. $JAVA_OPTS -Djava.io.tmpdir=$TMPDIR universidad.UniversidadApplication server $PWD/java-app.yml
